@@ -32,3 +32,7 @@ The SeaSponge WeChat Mini-program uses the following APIs
 * Tencent location services (https://apis.map.qq.com)
 
 Also, the weather icons in SeaSponge uses the images from Heweather
+
+## Preview
+
+![Preview](./SeaSponge-weather-preview)
