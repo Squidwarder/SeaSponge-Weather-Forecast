@@ -1,0 +1,137 @@
+.temperature {
+  line-height: 280rpx;
+  font-size: 200rpx;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 3;
+}
+.weather {
+  font-size: 40rpx;
+  line-height: 56rpx;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 3;
+}
+.weather-wrapper {
+  position: relative;
+  padding-top: 40rpx;
+  padding-bottom: 230rpx;
+  background-color: #afddf1;
+  z-index: 1;
+}
+.weather-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 256rpx;
+  width: 256rpx;
+  z-index: 2;
+}
+.data-header {
+  margin-top: 20rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20rpx;
+  border-bottom: 2px solid rgb(202, 238, 252);
+}
+.data-header-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.data-header-text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+.data-list {
+  align-items: center;
+  height: 50rpx;
+  display: flex;
+}
+.data-item {
+  padding-left: 40rpx;
+  flex-shrink: 0;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.data-item-last {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  flex-shrink: 0;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.forecast-list { 
+  margin-top: 40rpx;
+  display: flex; 
+} 
+.forecast-item { 
+  display: flex; 
+  flex-direction: column; 
+  flex-shrink: 0; 
+  width: 120rpx; 
+  align-items: center; 
+} 
+.forecast-time { 
+  font-size: 30rpx; 
+  line-height: 42rpx; 
+} 
+.forecast-icon { 
+  margin-top: 50rpx; 
+  width: 60rpx; 
+  height: 60rpx; 
+} 
+.forecast-temperature { 
+  font-size: 40rpx; 
+  line-height: 56rpx; 
+  margin-top: 36rpx; 
+}
+.day-weather {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 40rpx;
+  right: 40rpx;
+  height: 90rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+.temp-text {
+  flex-grow: 1;
+  text-align: right;
+  padding: 30rpx;
+}
+.arrow-icon {
+  width: 24rpx;
+  height: 24rpx;
+}
+.location-wrapper {
+  margin-bottom: 60rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(0, 0, 0, 0.5)!important;
+  border: none!important;
+  padding: 0!important;
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-text {
+  opacity: 0.5;
+}
+.location-icon {
+  height: 30rpx;
+  width: 30rpx;
+}
+.location-tips {
+  margin-top: 10rpx;
+  text-align: center;
+  opacity: 0.5;
+  height: 42rpx;
+}

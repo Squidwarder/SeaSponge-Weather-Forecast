@@ -1,0 +1,45 @@
+<view class="weather-wrapper">
+  <button class="location-wrapper" open-type="{{ locationAuthType==1 ? 'openSetting' : ''}}" bindopensetting="onTapLocation" bindtap="onTapLocation" plain="true">
+    <view class="location">
+      <image class="location-icon" src="/images/Location-Icon.png"></image>
+      <view class="location-text">{{currentCityName}}</view>
+    </view>
+    <!--0:未弹窗，1:已拒绝，2:已同意-->
+    <view wx:if="{{locationAuthType==0}}" class="location-tips">点击获取当前位置</view>
+    <view wx:if="{{locationAuthType==1}}" class="location-tips">点击开启位置权限</view>
+    <view wx:if="{{locationAuthType==2}}" class="location-tips"></view>
+  </button>
+  <view class="temperature">{{nowTemperature}}˚</view>
+  <view class="weather">{{nowWeather}}</view>
+  <image class="weather-background" src="{{nowWeatherIcon}}" mode="scaleToFill"></image>
+  <view class="day-weather" bindtap="onTapDayWeather">
+    <view class="day-text">{{todayDate}}</view>
+    <view class="temp-text">未来十天天气预报</view>
+    <image class="arrow-icon" src="/images/Arrow.png"></image>
+  </view>
+</view>
+<view class="data-header">
+  <image class="data-header-icon" src="/images/ForecastIcon.png"></image>
+  <view class="data-header-text">详细天气信息</view>
+</view>
+<scroll-view scroll-x>
+  <view class="data-list">
+    <view class="data-item">{{nowWindDir}}</view>
+    <view class="data-item">{{nowWindScale}}级</view>
+    <view class="data-item">{{nowWindSpeed}} km/s</view>
+    <view class="data-item">风向：{{nowWind360}}˚</view>
+    <view class="data-item">云量：{{nowCloud}}%</view>
+    <view class="data-item">体感温度：{{nowFeelsLike}}˚</view>
+    <view class="data-item">湿度：{{nowHumidity}}%</view>
+    <view class="data-item">能见度：{{nowVis}}km</view>
+    <view class="data-item">降雨量：{{nowPrecip}}mm</view>
+    <view class="data-item-last">气压：{{nowPressure}}Pa</view>
+  </view>
+  <view class="forecast-list"> 
+    <view class="forecast-item" wx:for="{{forecastClass}}"> 
+      <view class="forecast-time">{{item.time}}</view> 
+      <image class="forecast-icon" src="{{item.weather}}"></image> 
+      <view class="forecast-temperature">{{item.temp}}</view> 
+    </view> 
+  </view> 
+</scroll-view>
