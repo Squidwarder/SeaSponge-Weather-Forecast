@@ -1,0 +1,8 @@
+<view class="date-item" wx:for="{{futureForecast}}">
+  <view class="date-wrapper">
+    <view class="day">{{item.futureDay}}</view>
+    <view class="date">{{item.futureDate}}</view>
+  </view>
+  <view class="temp">{{item.futureTemp}}</view>
+  <image class="forecast-icon" src="{{item.futureWeatherIcon}}"></image>
+</view>
