@@ -35,4 +35,4 @@ Also, the weather icons in SeaSponge uses the images from Heweather
 
 ## Preview
 
-![Preview](./SeaSponge-weather-preview.png)
+![Preview](./SeaSponge-weather-preview.png){width=50%}
